@@ -1,4 +1,10 @@
 import java.util.Random;  //to use the random number generator 
+
+/**
+   This class simulates the rolling of 
+   two dice, calculates the roll, and 
+   counts the number of double rolls.
+*/
 public class DiceSimulation
 {
   public static void main(String[] args)
