@@ -42,8 +42,9 @@ public static void main(String[] args) throws IOException
     	  line = readFile.readLine(); // Read a new line from the file
     	  if(line == null)
     		  break;
-    	  else{
-    		  values.add(Double.parseDouble(line)); // Convert the line to a double value and add the value to sum
+    	  else
+          {
+    		 values.add(Double.parseDouble(line)); // Convert the line to a double value and add the value to sum
     		 sum += Double.valueOf(line);
         	 count += 1; // Increment the counter
     	  }	
@@ -51,6 +52,8 @@ public static void main(String[] args) throws IOException
       readFile.close(); 
       System.out.println(count); // Store the calculated mean
       mean = sum / count;
+      System.out.println("The mean is: " + mean);
+
       
       FileReader File_read = new FileReader(filename); // Create a FileReader object passing it the filename
       BufferedReader read_File = new BufferedReader(File_read); // Create a BufferedReader object passing FileReader
@@ -70,6 +73,7 @@ public static void main(String[] args) throws IOException
       }
       read_File.close(); // Close the input file
       stdDev = Math.sqrt(sum / count - 1); // Store the calculated standard deviation
+      System.out.println("The standard deviation is: " + stdDev);
       // ADD LINES FOR TASK #3 HERE
       FileWriter write = new FileWriter("Result.txt"); // Create a FileWriter object using "Results.txt"
       PrintWriter output = new PrintWriter(write); // Create a PrintWriter object passing the FileWriter object
