@@ -17,15 +17,15 @@ public class Circle
     {
         return radius;
     }
-    public double area()
+    public double getArea()
     {
         return Math.PI * Math.pow(radius, 2);
     }
-    public double diameter()
+    public double getDiameter()
     {
         return radius * 2.0;
     }
-    public double circumference()
+    public double getCircumference()
     {
         return Math.PI * radius * 2.0;
     }
