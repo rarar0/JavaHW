@@ -5,12 +5,13 @@ public class CircleDemo
     {
         String input;
         double value;
-        Circle radius = new Circle();
         System.out.printf("Enter the radius"+
                         "of a circle");
         Scanner keyboard = new Scanner(System.in);
         input = keyboard.nextLine();
         value = Double.parseDouble(input);
+        Circle radius = new Circle(0);
+
         radius.setRadius(value);
         System.out.printf("Area: " + radius.getArea()
         + "\n Diameter: " + radius.getDiameter() +
