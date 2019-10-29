@@ -5,6 +5,10 @@ public class Circle
         {
         radius = r;
         }
+    public Circle()
+    {
+        radius = 0.0;
+    }
     public void setRadius(double r)
     {
        radius = r;
