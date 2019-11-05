@@ -78,7 +78,7 @@ public class TelevisionDemo
       //  Increase the volume of the television
       portable.increaseVolume();
       //  Display the the current channel and volume of the television
-      System.out.println("Channel:  " + portable.getChannel() +
+      System.out.println("Channel: " + portable.getChannel() +
                          " Volume: "+ portable.getVolume());
       System.out.println("Too loud!! Lowering the volume.");
       //  Decrease the volume of the television
@@ -86,7 +86,7 @@ public class TelevisionDemo
       portable.decreaseVolume();
       portable.decreaseVolume();
       //  Display the current channel and volume of the television
-      System.out.println("Channel:  "+ portable.getChannel() +
+      System.out.println("Channel: "+ portable.getChannel() +
                          " Volume: "+ portable.getVolume());
    }
 }
