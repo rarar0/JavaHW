@@ -12,7 +12,6 @@ public class GradeBookDemo
         String[] test = new String[25];
         while (true)
         {
-            line = readFile.readLine(); // Read a new line from the file
     	    if(line == null)
     		    break;
     	    else
