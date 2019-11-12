@@ -17,7 +17,7 @@ public class GradeBookDemo
     		    break;
     	    else
             {
-                for (int i = 0; i < test.length; i++)
+                for (int i = 0; i <= test.length; i++)
                 {
                     test[i] = readFile.readLine();
                 }
