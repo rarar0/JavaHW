@@ -22,6 +22,8 @@ public class GradeBookDemo
                 }
             }
         }
+        readFile.close(); // Close the input file
+
         for (int i = 0; i <= 25; i++)
         {
             System.out.println(test[i]);
