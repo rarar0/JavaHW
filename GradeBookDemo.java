@@ -10,6 +10,7 @@ public class GradeBookDemo
         BufferedReader readFile = new BufferedReader(File);
         String line = readFile.readLine();      
         String[] test = new String[25];
+        line = readFile.readLine(); // Perform a priming read to read the first line of the file
         while (true)
         {
     	    if(line == null)
