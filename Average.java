@@ -8,7 +8,7 @@ highest to lowest order.
 */
 public class Average
 {
-    private int[] data = new int[5]; // Data array
+    private int[] data = new int[5]; // Data array user input
     private double mean; // Average of scores
     /**
     The Average constructor method uses a for loop
@@ -53,6 +53,8 @@ public class Average
                data[2]+", "+data[3]+", "+data[4]+", "+
                " Average = " + mean;
     }
+    
+    // return data + " Average = " + mean;
     /**
     The selectionSort method takes the data in the data
     array and sorts it from highest score to lowest
@@ -61,12 +63,12 @@ public class Average
     public void selectionSort()
     {
         int n = data.length;
-
-    for(int i = 0; i < n-1; i++)
+    
+    for(int i = 0; i < n-1; i++)  // Descending sort
     {
         int min_idx = i;
         for(int j = i+1; j < n; j++)
-            if(data[j] >= data[min_idx])
+            if(data[j] >= data[min_idx]) // >= over <
                 min_idx = j;
 
         int temp = data[min_idx];
