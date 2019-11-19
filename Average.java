@@ -49,7 +49,9 @@ public class Average
     */
     public String toString()
     {
-        return data + "Average = " + mean;
+        return "Scores: "+data[0]+", "+ data[1]+", "+
+               data[2]+", "+data[3]+", "+data[4]+", "+
+               " Average = " + mean;
     }
     /**
     The selectionSort method takes the data in the data
