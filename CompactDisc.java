@@ -17,6 +17,7 @@ public class CompactDisc
       // ADD LINES FOR TASK #3 HERE
       // Declare an array of Song objects, called cd,
       // with a size of 6
+      Song cd[6] = new Song();
 
       for (int i = 0; i < cd.length; i++)
       {
