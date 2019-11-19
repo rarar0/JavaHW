@@ -13,28 +13,27 @@ public class CompactDisc
       BufferedReader input = new BufferedReader(file);
       String title;
       String artist;
-
       // ADD LINES FOR TASK #3 HERE
       // Declare an array of Song objects, called cd,
       // with a size of 6
-      Song cd[6] = new Song();
-
+      Song [] cd = new Song[6];
       for (int i = 0; i < cd.length; i++)
       {
          title = input.readLine();
          artist = input.readLine();
-
          // ADD LINES FOR TASK #3 HERE
          // Fill the array by creating a new song with
          // the title and artist and storing it in the
          // appropriate position in the array
+         Song son = new Song(title,artist);
+			cd[i] = son;
       }
-
       System.out.println("Contents of Classics:");
       for (int i = 0; i < cd.length; i++)
       {
          // ADD LINES FOR TASK #3 HERE
          // Print the contents of the array to the console
+         System.out.print(cd[i]);
       }
    }
 }
