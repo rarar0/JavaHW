@@ -1,48 +1,43 @@
-class FuelGauge {
+class FuelGauge 
+{
 
     final static int MAXIMUM_GALLONS = 15;
-
     private int gallons;
-
-    public FuelGauge() {
+    /**
+    FuelGauge constructor initializes gallons to 0
+    */
+    public FuelGauge() 
+    {
         gallons = 0;
     }
-
     /**
-     
-     @param gallons
-     */
-    public FuelGauge(int gallons) {
-        if (gallons <= MAXIMUM_GALLONS) {
-            this.gallons = gallons;
-        } else {
-            gallons = MAXIMUM_GALLONS;
-        }
+    The FuelGauge constructor receives an int gallons.
+    @param gallons
+    */
+    public FuelGauge(int gallons) 
+    {
+        this.gallons = gallons
     }
-
-    public int getGallons() {
+    /**
+    getGallons returns gallons
+    @return gallons is the number of gallons
+    */
+    public int getGallons() 
+    {
         return gallons;
     }
-
     /**
-     
-     */
-    public void addGallons() {
-        if (gallons < MAXIMUM_GALLONS) {
-            gallons++;
-        } else {
-            // TODO: see constructor, throw GasOverflowException
-            System.out.println("FUEL OVERFLOWING!!!");
-        }
+    incrementGallons increments gallons by 1
+    */
+    public void incrementGallons() 
+    {
+       gallons++;
     }
-
     /**
-          */
-    public void burnFuel() {
-        if (gallons > 0) {
-            gallons--;
-        } else {
-            System.out.println("OUT OF FUEL!!!");
-        }
+    decrementGallons decrements gallons by 1
+    */
+    public void decrementGallons() 
+    {
+        gallons--;
     }
 }
